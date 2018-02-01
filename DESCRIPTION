@@ -1,0 +1,14 @@
+Package: testpkg
+Title: A Package for Ada to Learn How to Make a Package
+Version: 0.0.0.9000
+Authors@R: person("Ada", "Yan", email = "ada.w.yan@gmail.com", role = c("aut", "cre"))
+Description: This is a test package for learning purposes.  
+	Contains nothing useful.
+Depends: R (>= 3.3.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/ada-w-yan/testpkg
+BugReports: https://github.com/ada-w-yan/testpkg/issues
+Imports:
+	ggplot2
