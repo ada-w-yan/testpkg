@@ -13,3 +13,7 @@ BugReports: https://github.com/ada-w-yan/testpkg/issues
 Imports:
 	ggplot2
 RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr

@@ -1,0 +1,27 @@
+---
+title: "Ada tries to write a vignette"
+author: "Ada Yan"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Ada tries to write a vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r, echo = FALSE}
+devtools::load_all()
+```
+
+```{r}
+n <- 10
+my_df <- data.frame(x = seq(1, n), y = runif(n))
+plot_line(my_df, "x", "y")
+```

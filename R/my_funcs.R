@@ -19,9 +19,27 @@ my_add <- function(x, y){
 #' @param x_name character vector of length 1: name of variable to plot on x axis
 #' @param y_name character vector of length 1: name of variable to plot on y axis
 #' @return ggplot object
+#' @import ggplot2
 #' @export
 plot_line <- function(data_frame, x_name, y_name){
   stopifnot(x_name %in% colnames(data_frame) &&
               y_name %in% colnames(data_frame))
   ggplot(data_frame, aes_string(x = x_name, y = y_name)) + geom_line()
+}
+
+#' returns the nth Fibonacci number
+#' 
+#' \code{calc_fibonacci} returns the nth Fibonacci number
+#' 
+#' @param n numeric vector of length 1
+#' @return numeric vector of length 1: nth Fibonacci number
+#' @export
+calc_fibonacci <- function(n) {
+  stopifnot(n > 0)
+  stopifnot(isTRUE(all.equal(round(n), n)))
+  if(n <= 2) {
+    1
+  } else {
+    calc_fibonacci(n - 1) + calc_fibonacci(n - 2)
+  }
 }
