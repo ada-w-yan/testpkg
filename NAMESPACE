@@ -3,4 +3,7 @@
 export(calc_fibonacci)
 export(my_add)
 export(plot_line)
+export(reverse_string)
+export(teenage_capitalise)
 import(ggplot2)
+importFrom(stats,runif)

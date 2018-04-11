@@ -7,6 +7,7 @@ vignette: >
   %\VignetteIndexEntry{Ada tries to write a vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteDepends{devtools}
 ---
 
 ```{r setup, include = FALSE}
